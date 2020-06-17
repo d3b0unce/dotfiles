@@ -19,8 +19,22 @@ set number
 set hlsearch
 set ruler
 set ignorecase
+set cursorline
+set showmatch
+set showcmd
 highlight Comment ctermfg=green
 
 " keys
 map <C-n> :NERDTreeToggle<CR>
 
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
